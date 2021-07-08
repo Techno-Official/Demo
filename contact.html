@@ -162,6 +162,33 @@ Techzniczone-Demo
             </div>
           </form>
         </div>
+        
+        <!--contact script-->
+
+
+		<script>
+			$("#submit-form").submit((e)=>{
+				e.preventDefault()
+				$.ajax({
+					url:"https://script.google.com/macros/s/AKfycbx4vBRevuo4hrAWxg1ydvDfkJV6y0p15GKQVkKL7npSDXplwcHG8tCwBHNKvejFpRLb/exec",
+					data:$("#submit-form").serialize(),
+					method:"post",
+					success:function (response){
+						alert("Form submitted successfully")
+						window.location.reload()
+						//window.location.href="https://google.com"
+					},
+					error:function (err){
+						alert("Something Error")
+		
+					}
+				})
+			})
+		</script>
+		
+
+
+		<!--contact script-->
         <div class="col-md-4 mt-md-0 mt-5 w3-contact-address">
           <b>Address:</b>
           <p>#135 building ,</p>
