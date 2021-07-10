@@ -9625,6 +9625,7 @@ p.white {
   overflow: hidden; }
 
 .btn-style {
+  margin-bottom: 40px;
   padding: 12px 30px;
   color: #fff;
   font-size: 16px;
